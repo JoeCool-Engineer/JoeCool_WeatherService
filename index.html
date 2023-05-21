@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous"
+  />
+
+    <title>JoeCool Weather Station</title>
+    <link rel="stylesheet" href='./assets/css/style.css'>
+</head>
+<body>
+    <header class="container-fluid">
+        <span class="fw-bold">
+            <h1 class="text-center m-2 p-2">JoeCool Weather Dashboard
+                <img src="./assets/img/Joe-Cool.jpg" alt="JoeCool" height="50px" width="35px">
+            </h1>
+        </span>
+    </header>
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <!-- City Search Bar -->
+                <div class="container-lg col-lg-2 mt-2">
+                    <h3>Search for a City:</h3>
+                    <input type="text" class="form-control border-primary" id="cityInput" placeholder="San Diego">
+                    <div class="d-grid gap-2 mt-2">
+                        <button class="btn btn-primary" id="citySearch" type="button">Search</button>
+                    </div>
+                    <hr class="border border-primary border-1 opacity-50">
+                </div>
+                <!-- Temperatures -->
+                <div class="conatainer-lg col-lg-10 d-flex flex-column mt-2">
+                    <!-- Today -->
+                    <div class="container-lg">
+                        <div class="border border-primary p-3">
+                            <h3 id="cityName">Atlanta (Date)</h3>
+                            <p class="lead" id="tempNow">Temp:</p>
+                            <p class="lead" id="windNow">Wind:</p>
+                            <p class="lead" id="humidNow">Humidity:</p>
+                        </div>
+                    </div>
+                    <!-- Next 5 Days -->
+                    <div class="container-lg mt-3">
+                        <h4>5-Day Forcast:</h4>
+                        <!-- Space Between Each Card -->
+                        <div class="d-flex justify-content-between">
+                            <!-- First Day -->
+                            <div class="container-lg col-2 p-2 dayCard text-light">
+                                <p class="dayOne" id="firstDate">Date</p>
+                                <p class="dayOne" id="firstTemp">Temp:</p>
+                                <p class="dayOne" id="firstWind">Wind:</p>
+                                <p class="dayOne" id="firstHumid">Humidity:</p>
+                            </div>
+
+                            <!-- Second Day -->
+                            <div class="container-lg col-2 p-2 dayCard text-light">
+                                <p class="dayTwo" id="secondDate">Date</p>
+                                <p class="dayTwo" id="secondTemp">Temp:</p>
+                                <p class="dayTwo" id="secondWind">Wind:</p>
+                                <p class="dayTwo" id="secondHumid">Humidity:</p>
+                            </div>
+                            <!-- Third Day -->
+                            <div class="container-lg col-2 p-2 dayCard text-light">
+                                <p class="dayThree" id="thirdDate">Date</p>
+                                <p class="dayThree" id="thirdTemp">Temp:</p>
+                                <p class="dayThree" id="thirdWind">Wind:</p>
+                                <p class="dayThree" id="thirdHumid">Humidity:</p>
+                            </div>
+                            <!-- Fourth Day -->
+                            <div class="container-lg col-2 p-2 dayCard text-light">
+                                <p class="dayFour" id="fourthDate">Date</p>
+                                <p class="dayFour" id="fourthTemp">Temp:</p>
+                                <p class="dayFour" id="fourthWind">Wind:</p>
+                                <p class="dayFour" id="fourthHumid">Humidity:</p>
+                            </div>
+                            <!-- Fifth Day -->
+                            <div class="container-lg col-2 p-2 dayCard text-light">
+                                <p class="dayFive" id="fifthDate">Date</p>
+                                <p class="dayFive" id="fifthTemp">Temp:</p>
+                                <p class="dayFive" id="fifthWind">Wind:</p>
+                                <p class="dayFive" id="fifthHumid">Humidity:</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- JQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" 
+crossorigin="anonymous"></script>
+<!-- DayJS -->
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+crossorigin="anonymous"></script>
+<script src = './assets/js/script.js'></script>
+</body>
+</html>
