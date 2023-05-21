@@ -1,0 +1,12 @@
+header{
+    background-image: linear-gradient(to right, #321cd9, #0c0161);
+    color: white;
+}
+
+article {
+    border: 2px solid black;
+}
+
+.dayCard {
+    background-color: #0c0161
+}
