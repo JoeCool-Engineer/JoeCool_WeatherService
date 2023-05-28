@@ -32,9 +32,10 @@
                     <h3>Search for a City:</h3>
                     <input type="text" class="form-control border-primary" id="cityInput" placeholder="San Diego">
                     <div class="d-grid gap-2 mt-2">
-                        <button class="btn btn-primary" id="citySearch" type="button">Search</button>
+                        <button class="btn btn-primary btnSearch" type="button">Search</button>
                     </div>
                     <hr class="border border-primary border-1 opacity-50">
+                    <div class="d-grid gap-2 mt-2 savedCity"></div>
                 </div>
                 <!-- Temperatures -->
                 <div class="conatainer-lg col-lg-10 d-flex flex-column mt-2">
@@ -51,43 +52,8 @@
                     <div class="container-lg mt-3">
                         <h4>5-Day Forcast:</h4>
                         <!-- Space Between Each Card -->
-                        <div class="d-flex justify-content-between">
-                            <!-- First Day -->
-                            <div class="container-lg col-2 p-2 dayCard text-light">
-                                <p class="dayOne" id="firstDate">Date</p>
-                                <p class="dayOne" id="firstTemp">Temp:</p>
-                                <p class="dayOne" id="firstWind">Wind:</p>
-                                <p class="dayOne" id="firstHumid">Humidity:</p>
-                            </div>
+                        <div class="d-flex justify-content-between fiveCards">
 
-                            <!-- Second Day -->
-                            <div class="container-lg col-2 p-2 dayCard text-light">
-                                <p class="dayTwo" id="secondDate">Date</p>
-                                <p class="dayTwo" id="secondTemp">Temp:</p>
-                                <p class="dayTwo" id="secondWind">Wind:</p>
-                                <p class="dayTwo" id="secondHumid">Humidity:</p>
-                            </div>
-                            <!-- Third Day -->
-                            <div class="container-lg col-2 p-2 dayCard text-light">
-                                <p class="dayThree" id="thirdDate">Date</p>
-                                <p class="dayThree" id="thirdTemp">Temp:</p>
-                                <p class="dayThree" id="thirdWind">Wind:</p>
-                                <p class="dayThree" id="thirdHumid">Humidity:</p>
-                            </div>
-                            <!-- Fourth Day -->
-                            <div class="container-lg col-2 p-2 dayCard text-light">
-                                <p class="dayFour" id="fourthDate">Date</p>
-                                <p class="dayFour" id="fourthTemp">Temp:</p>
-                                <p class="dayFour" id="fourthWind">Wind:</p>
-                                <p class="dayFour" id="fourthHumid">Humidity:</p>
-                            </div>
-                            <!-- Fifth Day -->
-                            <div class="container-lg col-2 p-2 dayCard text-light">
-                                <p class="dayFive" id="fifthDate">Date</p>
-                                <p class="dayFive" id="fifthTemp">Temp:</p>
-                                <p class="dayFive" id="fifthWind">Wind:</p>
-                                <p class="dayFive" id="fifthHumid">Humidity:</p>
-                            </div>
                         </div>
                     </div>
                 </div>
