@@ -46,7 +46,7 @@ function getCoords(cityRequest) {
     cityName.innerHTML = cityRequest + ' (' + dt.toLocaleDateString("en-US") + ')';    
     
     // console.log(getKey);
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityRequest}&appid=${apiKey}`)
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${cityRequest}&appid=${apiKey}`)
     .then((result) => {return result.json()})
     .then((data) => {
         let lat = data[0].lat;
@@ -61,7 +61,7 @@ function getCoords(cityRequest) {
 function getWeather(lat, lon) {
     // console.log('Lat: '+ lat + '\nLon: ' + lon );
 
-    fetch(`http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&cnt=40&units=imperial`)
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&cnt=40&units=imperial`)
     .then((result) => {return result.json()})
     .then((data) => {
         var cardEl = $('.fiveCards');
